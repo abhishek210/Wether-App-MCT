@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img.webp);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.outerMostContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.heading {
+    font-size: 25px;
+    width: 60%;
+    text-align: center;
+    padding: 5px;
+}
+
+.searchContainer {
+    height: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.searchContainer input {
+    height: 25%;
+    width: 70%;
+    border-radius: 10px;
+    margin: 1rem;
+    padding-left: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.searchContainer button {
+    height: 25%;
+    width: 30%;
+    background-color: #245dc7;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+#alert {
+    color: white;
+    text-shadow: 1px 1px 2px red;
+}
+
+.card {
+    height: 45%;
+    width: 45%;
+    background-color: rgb(23, 112, 185);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.card h1 {
+    color: white;
+    font-size: 45px;
+}
+@media only screen and (min-width:768px) and (max-width:1025px) {
+    .heading {
+        width: 80%;
+    }
+
+    .searchContainer,
+    .card {
+        width: 40%;
+    }
+
+    
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .heading {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .searchContainer input {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .searchContainer button {
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .searchContainer,
+    .card {
+        width: 80%;
+    }
+
+    
+}
